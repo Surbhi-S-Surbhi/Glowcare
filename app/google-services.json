@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "58739419978",
+    "project_id": "glowcare-ef1f6",
+    "storage_bucket": "glowcare-ef1f6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58739419978:android:52960c55387616200fefb3",
+        "android_client_info": {
+          "package_name": "com.glowcare.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC0CPRcLnx3HJlEbiViSULNsv0BV_ybCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

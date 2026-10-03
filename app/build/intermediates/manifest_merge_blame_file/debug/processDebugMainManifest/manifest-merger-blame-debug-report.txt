@@ -1,0 +1,485 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.glowcare.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-feature
+11-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:4:5-89
+12        android:name="android.hardware.camera.any"
+12-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:4:19-61
+13        android:required="false" />
+13-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:4:62-86
+14
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:5:5-65
+15-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:5:22-62
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:6:5-71
+16-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:6:22-68
+17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+17-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:7:5-77
+17-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:7:22-74
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:8:5-66
+18-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:8:22-63
+19    <uses-permission android:name="com.android.vending.BILLING" />
+19-->[com.android.billingclient:billing-ktx:7.1.1] /home/surbhi/.gradle/caches/transforms-4/d1ffe9f87b86d4916dab5fb645e4d156/transformed/billing-ktx-7.1.1/AndroidManifest.xml:9:5-67
+19-->[com.android.billingclient:billing-ktx:7.1.1] /home/surbhi/.gradle/caches/transforms-4/d1ffe9f87b86d4916dab5fb645e4d156/transformed/billing-ktx-7.1.1/AndroidManifest.xml:9:22-64
+20
+21    <queries>
+21-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:12:5-19:15
+22        <intent>
+22-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:13:9-15:18
+23            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+23-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:14:13-91
+23-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:14:21-88
+24        </intent>
+25        <intent>
+25-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:16:9-18:18
+26            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND" />
+26-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:17:13-116
+26-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:17:21-113
+27        </intent>
+28    </queries>
+29
+30    <uses-permission android:name="android.permission.INTERNET" />
+30-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:25:5-67
+30-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:25:22-64
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:26:5-79
+31-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:26:22-76
+32    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+32-->[com.google.android.recaptcha:recaptcha:18.5.1] /home/surbhi/.gradle/caches/transforms-4/7bd2ca7dad77886ac19cb99ef69ac8d5/transformed/recaptcha-18.5.1/AndroidManifest.xml:9:5-98
+32-->[com.google.android.recaptcha:recaptcha:18.5.1] /home/surbhi/.gradle/caches/transforms-4/7bd2ca7dad77886ac19cb99ef69ac8d5/transformed/recaptcha-18.5.1/AndroidManifest.xml:9:22-95
+33
+34    <permission
+34-->[androidx.core:core:1.13.1] /home/surbhi/.gradle/caches/transforms-4/4ca852e83e6845669deaad042e23cb84/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+35        android:name="com.glowcare.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+35-->[androidx.core:core:1.13.1] /home/surbhi/.gradle/caches/transforms-4/4ca852e83e6845669deaad042e23cb84/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+36        android:protectionLevel="signature" />
+36-->[androidx.core:core:1.13.1] /home/surbhi/.gradle/caches/transforms-4/4ca852e83e6845669deaad042e23cb84/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+37
+38    <uses-permission android:name="com.glowcare.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- QA-only broadcast receiver (debug builds). Never in release source. -->
+38-->[androidx.core:core:1.13.1] /home/surbhi/.gradle/caches/transforms-4/4ca852e83e6845669deaad042e23cb84/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+38-->[androidx.core:core:1.13.1] /home/surbhi/.gradle/caches/transforms-4/4ca852e83e6845669deaad042e23cb84/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+39    <application
+39-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:10:5-39:19
+40        android:name="com.glowcare.app.GlowCareApp"
+40-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:11:9-36
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.13.1] /home/surbhi/.gradle/caches/transforms-4/4ca852e83e6845669deaad042e23cb84/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+42        android:debuggable="true"
+43        android:enableOnBackInvokedCallback="true"
+43-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:15:9-51
+44        android:extractNativeLibs="false"
+45        android:icon="@mipmap/ic_launcher"
+45-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:13:9-43
+46        android:label="@string/app_name"
+46-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:12:9-41
+47        android:supportsRtl="true"
+47-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:14:9-35
+48        android:theme="@style/Theme.GlowCare" >
+48-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:16:9-46
+49        <receiver
+49-->/home/surbhi/Downloads/GlowCare/app/src/debug/AndroidManifest.xml:5:9-85
+50            android:name="com.glowcare.app.debug.QaProfileReceiver"
+50-->/home/surbhi/Downloads/GlowCare/app/src/debug/AndroidManifest.xml:5:19-58
+51            android:exported="true" />
+51-->/home/surbhi/Downloads/GlowCare/app/src/debug/AndroidManifest.xml:5:59-82
+52
+53        <service
+53-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:18:9-25:19
+54            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+54-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:19:13-82
+55            android:enabled="false"
+55-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:20:13-36
+56            android:exported="false" >
+56-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:21:13-37
+57            <meta-data
+57-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:22:13-24:40
+58                android:name="autoStoreLocales"
+58-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:23:17-48
+59                android:value="true" />
+59-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:24:17-37
+60        </service>
+61
+62        <activity
+62-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:27:9-36:20
+63            android:name="com.glowcare.app.MainActivity"
+63-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:28:13-41
+64            android:exported="true"
+64-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:29:13-36
+65            android:theme="@style/Theme.GlowCare"
+65-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:30:13-50
+66            android:windowSoftInputMode="adjustResize" >
+66-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:31:13-55
+67            <intent-filter>
+67-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:32:13-35:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:33:17-69
+68-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:33:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:34:17-77
+70-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:34:27-74
+71            </intent-filter>
+72        </activity>
+73
+74        <receiver
+74-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:38:9-93
+75            android:name="com.glowcare.app.notifications.ReminderReceiver"
+75-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:38:19-65
+76            android:exported="false" />
+76-->/home/surbhi/Downloads/GlowCare/app/src/main/AndroidManifest.xml:38:66-90
+77
+78        <service
+78-->[androidx.camera:camera-camera2:1.3.4] /home/surbhi/.gradle/caches/transforms-4/a4f3783cb5177b6e10a5377b871c43be/transformed/camera-camera2-1.3.4/AndroidManifest.xml:24:9-33:19
+79            android:name="androidx.camera.core.impl.MetadataHolderService"
+79-->[androidx.camera:camera-camera2:1.3.4] /home/surbhi/.gradle/caches/transforms-4/a4f3783cb5177b6e10a5377b871c43be/transformed/camera-camera2-1.3.4/AndroidManifest.xml:25:13-75
+80            android:enabled="false"
+80-->[androidx.camera:camera-camera2:1.3.4] /home/surbhi/.gradle/caches/transforms-4/a4f3783cb5177b6e10a5377b871c43be/transformed/camera-camera2-1.3.4/AndroidManifest.xml:26:13-36
+81            android:exported="false" >
+81-->[androidx.camera:camera-camera2:1.3.4] /home/surbhi/.gradle/caches/transforms-4/a4f3783cb5177b6e10a5377b871c43be/transformed/camera-camera2-1.3.4/AndroidManifest.xml:27:13-37
+82            <meta-data
+82-->[androidx.camera:camera-camera2:1.3.4] /home/surbhi/.gradle/caches/transforms-4/a4f3783cb5177b6e10a5377b871c43be/transformed/camera-camera2-1.3.4/AndroidManifest.xml:30:13-32:89
+83                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+83-->[androidx.camera:camera-camera2:1.3.4] /home/surbhi/.gradle/caches/transforms-4/a4f3783cb5177b6e10a5377b871c43be/transformed/camera-camera2-1.3.4/AndroidManifest.xml:31:17-103
+84                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+84-->[androidx.camera:camera-camera2:1.3.4] /home/surbhi/.gradle/caches/transforms-4/a4f3783cb5177b6e10a5377b871c43be/transformed/camera-camera2-1.3.4/AndroidManifest.xml:32:17-86
+85        </service>
+86
+87        <meta-data
+87-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:22:9-24:37
+88            android:name="com.google.android.play.billingclient.version"
+88-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:23:13-73
+89            android:value="7.1.1" />
+89-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:24:13-34
+90
+91        <activity
+91-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:26:9-30:75
+92            android:name="com.android.billingclient.api.ProxyBillingActivity"
+92-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:27:13-78
+93            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+93-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:28:13-96
+94            android:exported="false"
+94-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:29:13-37
+95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+95-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:30:13-72
+96        <activity
+96-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:31:9-35:75
+97            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+97-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:32:13-80
+98            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+98-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:33:13-96
+99            android:exported="false"
+99-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:34:13-37
+100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+100-->[com.android.billingclient:billing:7.1.1] /home/surbhi/.gradle/caches/transforms-4/53a8136b83941342c966e732a29a039b/transformed/billing-7.1.1/AndroidManifest.xml:35:13-72
+101        <activity
+101-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:29:9-46:20
+102            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+102-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:30:13-80
+103            android:excludeFromRecents="true"
+103-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:31:13-46
+104            android:exported="true"
+104-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:32:13-36
+105            android:launchMode="singleTask"
+105-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:33:13-44
+106            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+106-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:34:13-72
+107            <intent-filter>
+107-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:35:13-45:29
+108                <action android:name="android.intent.action.VIEW" />
+108-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:36:17-69
+108-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:36:25-66
+109
+110                <category android:name="android.intent.category.DEFAULT" />
+110-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:38:17-76
+110-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:38:27-73
+111                <category android:name="android.intent.category.BROWSABLE" />
+111-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:39:17-78
+111-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:39:27-75
+112
+113                <data
+113-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:41:17-44:51
+114                    android:host="firebase.auth"
+114-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:42:21-49
+115                    android:path="/"
+115-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:43:21-37
+116                    android:scheme="genericidp" />
+116-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:44:21-48
+117            </intent-filter>
+118        </activity>
+119        <activity
+119-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:47:9-64:20
+120            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+120-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:48:13-79
+121            android:excludeFromRecents="true"
+121-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:49:13-46
+122            android:exported="true"
+122-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:50:13-36
+123            android:launchMode="singleTask"
+123-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:51:13-44
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+124-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:52:13-72
+125            <intent-filter>
+125-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:53:13-63:29
+126                <action android:name="android.intent.action.VIEW" />
+126-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:36:17-69
+126-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:36:25-66
+127
+128                <category android:name="android.intent.category.DEFAULT" />
+128-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:38:17-76
+128-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:38:27-73
+129                <category android:name="android.intent.category.BROWSABLE" />
+129-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:39:17-78
+129-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:39:27-75
+130
+131                <data
+131-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:41:17-44:51
+132                    android:host="firebase.auth"
+132-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:42:21-49
+133                    android:path="/"
+133-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:43:21-37
+134                    android:scheme="recaptcha" />
+134-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:44:21-48
+135            </intent-filter>
+136        </activity>
+137
+138        <service
+138-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:66:9-72:19
+139            android:name="com.google.firebase.components.ComponentDiscoveryService"
+139-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:67:13-84
+140            android:directBootAware="true"
+140-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+141            android:exported="false" >
+141-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:68:13-37
+142            <meta-data
+142-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:69:13-71:85
+143                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+143-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:70:17-109
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-auth:23.1.0] /home/surbhi/.gradle/caches/transforms-4/1a96d630d708333dad3410f117c23438/transformed/firebase-auth-23.1.0/AndroidManifest.xml:71:17-82
+145            <meta-data
+145-->[com.google.firebase:firebase-firestore:25.1.1] /home/surbhi/.gradle/caches/transforms-4/f44d95c6a4f4f3e148ce254c75d142c9/transformed/firebase-firestore-25.1.1/AndroidManifest.xml:17:13-19:85
+146                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+146-->[com.google.firebase:firebase-firestore:25.1.1] /home/surbhi/.gradle/caches/transforms-4/f44d95c6a4f4f3e148ce254c75d142c9/transformed/firebase-firestore-25.1.1/AndroidManifest.xml:18:17-122
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-firestore:25.1.1] /home/surbhi/.gradle/caches/transforms-4/f44d95c6a4f4f3e148ce254c75d142c9/transformed/firebase-firestore-25.1.1/AndroidManifest.xml:19:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-firestore:25.1.1] /home/surbhi/.gradle/caches/transforms-4/f44d95c6a4f4f3e148ce254c75d142c9/transformed/firebase-firestore-25.1.1/AndroidManifest.xml:20:13-22:85
+149                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+149-->[com.google.firebase:firebase-firestore:25.1.1] /home/surbhi/.gradle/caches/transforms-4/f44d95c6a4f4f3e148ce254c75d142c9/transformed/firebase-firestore-25.1.1/AndroidManifest.xml:21:17-111
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-firestore:25.1.1] /home/surbhi/.gradle/caches/transforms-4/f44d95c6a4f4f3e148ce254c75d142c9/transformed/firebase-firestore-25.1.1/AndroidManifest.xml:22:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/surbhi/.gradle/caches/transforms-4/758d1e52545ef6d76766c840bd2c705c/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+152                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+152-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/surbhi/.gradle/caches/transforms-4/758d1e52545ef6d76766c840bd2c705c/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/surbhi/.gradle/caches/transforms-4/758d1e52545ef6d76766c840bd2c705c/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+154            <meta-data
+154-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+155                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+155-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+157        </service>
+158        <service
+158-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:24:9-32:19
+159            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+159-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:25:13-94
+160            android:enabled="true"
+160-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:26:13-35
+161            android:exported="false" >
+161-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:27:13-37
+162            <meta-data
+162-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:29:13-31:104
+163                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+163-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:30:17-76
+164                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+164-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:31:17-101
+165        </service>
+166
+167        <activity
+167-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:34:9-41:20
+168            android:name="androidx.credentials.playservices.HiddenActivity"
+168-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:35:13-76
+169            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+169-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:36:13-87
+170            android:enabled="true"
+170-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:37:13-35
+171            android:exported="false"
+171-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:38:13-37
+172            android:fitsSystemWindows="true"
+172-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:39:13-45
+173            android:theme="@style/Theme.Hidden" >
+173-->[androidx.credentials:credentials-play-services-auth:1.3.0-beta01] /home/surbhi/.gradle/caches/transforms-4/e42d0cc7e7c3a8aa54f79e6086d7fc0a/transformed/credentials-play-services-auth-1.3.0-beta01/AndroidManifest.xml:40:13-48
+174        </activity>
+175        <activity
+175-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:23:9-27:75
+176            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+176-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:24:13-93
+177            android:excludeFromRecents="true"
+177-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:25:13-46
+178            android:exported="false"
+178-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:26:13-37
+179            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+179-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:27:13-72
+180        <!--
+181            Service handling Google Sign-In user revocation. For apps that do not integrate with
+182            Google Sign-In, this service will never be started.
+183        -->
+184        <service
+184-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:33:9-37:51
+185            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+185-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:34:13-89
+186            android:exported="true"
+186-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:35:13-36
+187            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+187-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:36:13-107
+188            android:visibleToInstantApps="true" />
+188-->[com.google.android.gms:play-services-auth:21.1.1] /home/surbhi/.gradle/caches/transforms-4/d3fac7aa2a30ed5983131c564bdcde57/transformed/play-services-auth-21.1.1/AndroidManifest.xml:37:13-48
+189
+190        <provider
+190-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+191            android:name="com.google.firebase.provider.FirebaseInitProvider"
+191-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+192            android:authorities="com.glowcare.app.firebaseinitprovider"
+192-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+193            android:directBootAware="true"
+193-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+194            android:exported="false"
+194-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+195            android:initOrder="100" />
+195-->[com.google.firebase:firebase-common:21.0.0] /home/surbhi/.gradle/caches/transforms-4/090736e4b8bea3effbbe4f747d49edd0/transformed/firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+196
+197        <activity
+197-->[com.google.android.gms:play-services-base:18.5.0] /home/surbhi/.gradle/caches/transforms-4/6e4665abded7147eb3b47de86c71d538/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+198            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+198-->[com.google.android.gms:play-services-base:18.5.0] /home/surbhi/.gradle/caches/transforms-4/6e4665abded7147eb3b47de86c71d538/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+199            android:exported="false"
+199-->[com.google.android.gms:play-services-base:18.5.0] /home/surbhi/.gradle/caches/transforms-4/6e4665abded7147eb3b47de86c71d538/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+200            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+200-->[com.google.android.gms:play-services-base:18.5.0] /home/surbhi/.gradle/caches/transforms-4/6e4665abded7147eb3b47de86c71d538/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+201
+202        <provider
+202-->[androidx.emoji2:emoji2:1.3.0] /home/surbhi/.gradle/caches/transforms-4/334984c7a55437f54f0df92de7f4a46a/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+203            android:name="androidx.startup.InitializationProvider"
+203-->[androidx.emoji2:emoji2:1.3.0] /home/surbhi/.gradle/caches/transforms-4/334984c7a55437f54f0df92de7f4a46a/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+204            android:authorities="com.glowcare.app.androidx-startup"
+204-->[androidx.emoji2:emoji2:1.3.0] /home/surbhi/.gradle/caches/transforms-4/334984c7a55437f54f0df92de7f4a46a/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+205            android:exported="false" >
+205-->[androidx.emoji2:emoji2:1.3.0] /home/surbhi/.gradle/caches/transforms-4/334984c7a55437f54f0df92de7f4a46a/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+206            <meta-data
+206-->[androidx.emoji2:emoji2:1.3.0] /home/surbhi/.gradle/caches/transforms-4/334984c7a55437f54f0df92de7f4a46a/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+207                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+207-->[androidx.emoji2:emoji2:1.3.0] /home/surbhi/.gradle/caches/transforms-4/334984c7a55437f54f0df92de7f4a46a/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+208                android:value="androidx.startup" />
+208-->[androidx.emoji2:emoji2:1.3.0] /home/surbhi/.gradle/caches/transforms-4/334984c7a55437f54f0df92de7f4a46a/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+209            <meta-data
+209-->[androidx.lifecycle:lifecycle-process:2.8.6] /home/surbhi/.gradle/caches/transforms-4/40e5a0c98d036f3311893be75a9062db/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:29:13-31:52
+210                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+210-->[androidx.lifecycle:lifecycle-process:2.8.6] /home/surbhi/.gradle/caches/transforms-4/40e5a0c98d036f3311893be75a9062db/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:30:17-78
+211                android:value="androidx.startup" />
+211-->[androidx.lifecycle:lifecycle-process:2.8.6] /home/surbhi/.gradle/caches/transforms-4/40e5a0c98d036f3311893be75a9062db/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:31:17-49
+212            <meta-data
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+213                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+214                android:value="androidx.startup" />
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+215        </provider>
+216
+217        <meta-data
+217-->[com.google.android.gms:play-services-basement:18.4.0] /home/surbhi/.gradle/caches/transforms-4/7a23604d9e4fe6ba7028d3b7d4d53902/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+218            android:name="com.google.android.gms.version"
+218-->[com.google.android.gms:play-services-basement:18.4.0] /home/surbhi/.gradle/caches/transforms-4/7a23604d9e4fe6ba7028d3b7d4d53902/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+219            android:value="@integer/google_play_services_version" />
+219-->[com.google.android.gms:play-services-basement:18.4.0] /home/surbhi/.gradle/caches/transforms-4/7a23604d9e4fe6ba7028d3b7d4d53902/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+220
+221        <receiver
+221-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+222            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+222-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+223            android:directBootAware="false"
+223-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+224            android:enabled="true"
+224-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+225            android:exported="true"
+225-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+226            android:permission="android.permission.DUMP" >
+226-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+227            <intent-filter>
+227-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+228                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+228-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+228-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+229            </intent-filter>
+230            <intent-filter>
+230-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+231                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+231-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+231-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+232            </intent-filter>
+233            <intent-filter>
+233-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+234                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+234-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+234-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+235            </intent-filter>
+236            <intent-filter>
+236-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+237                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+237-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+237-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/surbhi/.gradle/caches/transforms-4/707d7c167acedfaa1929ad618aab0633/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+238            </intent-filter>
+239        </receiver>
+240
+241        <service
+241-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/surbhi/.gradle/caches/transforms-4/9def78ac086b21ec26c645c77eaf1551/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+242            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+242-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/surbhi/.gradle/caches/transforms-4/9def78ac086b21ec26c645c77eaf1551/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+243            android:exported="false" >
+243-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/surbhi/.gradle/caches/transforms-4/9def78ac086b21ec26c645c77eaf1551/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+244            <meta-data
+244-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/surbhi/.gradle/caches/transforms-4/9def78ac086b21ec26c645c77eaf1551/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+245                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+245-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/surbhi/.gradle/caches/transforms-4/9def78ac086b21ec26c645c77eaf1551/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+246                android:value="cct" />
+246-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/surbhi/.gradle/caches/transforms-4/9def78ac086b21ec26c645c77eaf1551/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+247        </service>
+248        <service
+248-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/surbhi/.gradle/caches/transforms-4/3caa440779130fac222ff00cbb038e42/transformed/transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+249            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+249-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/surbhi/.gradle/caches/transforms-4/3caa440779130fac222ff00cbb038e42/transformed/transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+250            android:exported="false"
+250-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/surbhi/.gradle/caches/transforms-4/3caa440779130fac222ff00cbb038e42/transformed/transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+251            android:permission="android.permission.BIND_JOB_SERVICE" >
+251-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/surbhi/.gradle/caches/transforms-4/3caa440779130fac222ff00cbb038e42/transformed/transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+252        </service>
+253
+254        <receiver
+254-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/surbhi/.gradle/caches/transforms-4/3caa440779130fac222ff00cbb038e42/transformed/transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+255            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+255-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/surbhi/.gradle/caches/transforms-4/3caa440779130fac222ff00cbb038e42/transformed/transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+256            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+256-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/surbhi/.gradle/caches/transforms-4/3caa440779130fac222ff00cbb038e42/transformed/transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+257        <activity
+257-->[com.google.android.play:core-common:2.0.3] /home/surbhi/.gradle/caches/transforms-4/496978a58a0182c6c589fb315bb21911/transformed/core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+258            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+258-->[com.google.android.play:core-common:2.0.3] /home/surbhi/.gradle/caches/transforms-4/496978a58a0182c6c589fb315bb21911/transformed/core-common-2.0.3/AndroidManifest.xml:15:13-93
+259            android:exported="false"
+259-->[com.google.android.play:core-common:2.0.3] /home/surbhi/.gradle/caches/transforms-4/496978a58a0182c6c589fb315bb21911/transformed/core-common-2.0.3/AndroidManifest.xml:16:13-37
+260            android:stateNotNeeded="true"
+260-->[com.google.android.play:core-common:2.0.3] /home/surbhi/.gradle/caches/transforms-4/496978a58a0182c6c589fb315bb21911/transformed/core-common-2.0.3/AndroidManifest.xml:17:13-42
+261            android:theme="@style/Theme.PlayCore.Transparent" />
+261-->[com.google.android.play:core-common:2.0.3] /home/surbhi/.gradle/caches/transforms-4/496978a58a0182c6c589fb315bb21911/transformed/core-common-2.0.3/AndroidManifest.xml:18:13-62
+262    </application>
+263
+264</manifest>

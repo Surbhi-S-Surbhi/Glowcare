@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.glowcare.app-debug-73:/drawable_ic_launcher_bg.xml.flat",
+        "source": "com.glowcare.app-main-75:/drawable/ic_launcher_bg.xml"
+    },
+    {
+        "merged": "com.glowcare.app-debug-73:/drawable_ic_status_sparkle.xml.flat",
+        "source": "com.glowcare.app-main-75:/drawable/ic_status_sparkle.xml"
+    },
+    {
+        "merged": "com.glowcare.app-debug-73:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.glowcare.app-main-75:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.glowcare.app-debug-73:/drawable_ic_launcher_fg.xml.flat",
+        "source": "com.glowcare.app-main-75:/drawable/ic_launcher_fg.xml"
+    }
+]

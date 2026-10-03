@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- stylized lotus / sparkle mark -->
+    <group android:translateX="24" android:translateY="24">
+        <path
+            android:fillColor="#C4707F"
+            android:pathData="M30,50 C18,42 14,30 16,18 C26,22 32,30 33,40 C34,30 40,22 50,18 C52,30 48,44 37,51 C33,53 30,50 30,50 Z" />
+        <path
+            android:fillColor="#E8A0AC"
+            android:pathData="M30,50 C22,46 18,38 18,30 C25,34 29,41 30,48 Z" />
+        <path
+            android:fillColor="#8E6C86"
+            android:pathData="M30,52 C27,56 22,58 16,58 C20,52 25,50 30,49 C35,50 40,52 44,58 C38,58 33,56 30,52 Z" />
+    </group>
+</vector>

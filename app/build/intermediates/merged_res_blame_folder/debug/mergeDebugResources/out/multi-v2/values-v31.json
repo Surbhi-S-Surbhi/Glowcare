@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.glowcare.app-mergeDebugResources-71:/values-v31/values-v31.xml",
+            "map": [
+                {
+                    "source": "/home/surbhi/.gradle/caches/transforms-4/54098836a4e84a0cc26a0f8436b64531/transformed/core-splashscreen-1.0.1/res/values-v31/values-v31.xml",
+                    "from": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,473",
+                        "endLines": "8,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "468,697"
+                    }
+                }
+            ]
+        }
+    ]
+}
