@@ -282,9 +282,12 @@ private fun BenefitRow(res: Int, small: Boolean = false) {
     ) {
         Icon(Icons.Filled.Check, null, tint = MaterialTheme.colorScheme.primary,
             modifier = Modifier.padding(end = 10.dp))
-        Text(stringResource(res),
+        Text(
+            stringResource(res),
             style = if (small) MaterialTheme.typography.bodySmall
-                    else MaterialTheme.typography.bodyMedium)
+            else MaterialTheme.typography.bodyMedium,
+            color = Color.White
+        )
     }
 }
 

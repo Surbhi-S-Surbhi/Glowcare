@@ -50,7 +50,8 @@ private fun AppRoot(vm: AppViewModel) {
     Crossfade(
         targetState = when {
             !vm.billingReady -> "loading"
-            !vm.state.onboarded || (!vm.premium && !vm.debugFreeTier) -> "paywall"
+            !vm.state.onboarded -> "onboarding"
+            !vm.premium && !vm.debugFreeTier -> "paywall"
             else -> "app"
         },
         label = "root"
@@ -70,6 +71,8 @@ private fun AppRoot(vm: AppViewModel) {
                         color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
+            "onboarding" -> OnboardingScreen(vm) { }
+
             "paywall" -> PaywallScreen(vm) { vm.markOnboarded() }
             else -> AppNavHost(vm)
         }

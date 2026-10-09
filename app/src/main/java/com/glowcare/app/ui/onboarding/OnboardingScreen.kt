@@ -95,14 +95,35 @@ fun OnboardingScreen(vm: AppViewModel, onDone: () -> Unit) {
                 ) {
                     when (s) {
                         0 -> WelcomeStep()
+
                         1 -> LanguageStep(language) { language = it }
-                        2 -> InterestsStep(focusOptions, selected.toSet()) { id ->
-                            selected = if (selected.contains(id)) ArrayList(selected.filter { it != id })
-                            else ArrayList(selected + id)
+
+                        2 -> LoginStep(
+                            vm,
+                            signInError,
+                            { signInError = it },
+                            onNext = { step = 3 }
+                        )
+
+                        3 -> InterestsStep(focusOptions, selected.toSet()) { id ->
+                            selected = if (selected.contains(id)) {
+                                ArrayList(selected.filter { it != id })
+                            } else {
+                                ArrayList(selected + id)
+                            }
                         }
-                        3 -> LoginStep(vm, signInError, { signInError = it }, onNext = { step = 4 })
-                        4 -> PlansStep()
-                        5 -> ReminderStep(reminderOn, { reminderOn = it }, hour, minute) { h, m -> hour = h; minute = m }
+
+                        4 -> ReminderStep(
+                            reminderOn,
+                            { reminderOn = it },
+                            hour,
+                            minute
+                        ) { h, m ->
+                            hour = h
+                            minute = m
+                        }
+
+                        5 -> PlansStep()
                     }
                 }
             }
@@ -110,7 +131,7 @@ fun OnboardingScreen(vm: AppViewModel, onDone: () -> Unit) {
 
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
-            if (step > 0 && step != 4) {
+            if (step > 0 && step != 5) {
                 OutlinedButton(onClick = { step-- }) { Text(stringResource(R.string.back)) }
             } else Spacer(Modifier.width(1.dp))
             Row {
@@ -127,7 +148,7 @@ fun OnboardingScreen(vm: AppViewModel, onDone: () -> Unit) {
                     )
                 }
             }
-            if (step != 3) {
+            if (step != 2) {
                 Button(
                     onClick = {
                         when (step) {
@@ -412,6 +433,7 @@ fun ReminderTimePicker(hour: Int, minute: Int, onPick: (Int, Int) -> Unit) {
         horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth()) {
         TimeSpinner(0..23, hour) { h -> onPick(h, minute) }
         Text(":", style = MaterialTheme.typography.headlineMedium)
-        TimeSpinner(0..59, minute) { m -> onPick(hour, m) }
-    }
-}
+        TimeSpinner(0..59, minute) { m -> onPick(hour, m)  }
+    }   // Row
+}       // outer Column
+
