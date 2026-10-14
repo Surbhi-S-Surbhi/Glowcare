@@ -328,16 +328,22 @@ private fun LoginStep(
         }
     }
     Spacer(Modifier.height(12.dp))
+    /*
     OutlinedButton(
         onClick = { vm.continueAsGuest() },
         shape = RoundedCornerShape(18.dp),
         modifier = Modifier.fillMaxWidth()
     ) { Text(stringResource(R.string.continue_as_guest)) }
-
+    */
     // Advance as soon as the user has signed in or explicitly chosen guest.
-    LaunchedEffect(vm.profile.chosen) {
-        if (vm.profile.chosen) { onError(null); onNext() }
-    }
+    
+        LaunchedEffect(vm.profile.isSignedIn, vm.profile.isGuest) {
+            if (vm.profile.isSignedIn && !vm.profile.isGuest) {
+                onError(null)
+                onNext()
+            }
+        }
+
 
     lastError?.let {
         Spacer(Modifier.height(16.dp))

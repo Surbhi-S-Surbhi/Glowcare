@@ -164,41 +164,9 @@ fun PaywallScreen(vm: AppViewModel, onSubscribed: () -> Unit) {
             Spacer(Modifier.height(20.dp))
             val monthly = plans.firstOrNull { it.productId == BillingManager.MONTHLY_PRODUCT_ID }
             val yearlyPlan = plans.firstOrNull { it.productId == BillingManager.YEARLY_PRODUCT_ID }
-            PaywallPlanCard(
-                title = stringResource(R.string.plan_monthly),
-                price = monthly?.formattedPrice ?: stringResource(R.string.plan_monthly_price),
-                trialLine = stringResource(R.string.days_free_then_monthly),
-                selected = !yearly, badge = null
-            ) { yearly = false }
-            Spacer(Modifier.height(10.dp))
-            PaywallPlanCard(
-                title = stringResource(R.string.plan_yearly),
-                price = yearlyPlan?.formattedPrice ?: stringResource(R.string.plan_yearly_price),
-                trialLine = stringResource(R.string.days_free_then_yearly),
-                selected = yearly, badge = stringResource(R.string.best_value)
-            ) { yearly = true }
+            
 
-            Spacer(Modifier.height(22.dp))
-            Button(
-                onClick = {
-                    val productId = if (yearly) BillingManager.YEARLY_PRODUCT_ID
-                                    else BillingManager.MONTHLY_PRODUCT_ID
-                    if (context is android.app.Activity) {
-                        vm.launchSubscription(context, productId)
-                    }
-                },
-                shape = RoundedCornerShape(18.dp),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(56.dp)
-            ) { Text(stringResource(R.string.start_trial), style = MaterialTheme.typography.titleMedium) }
-
-            Spacer(Modifier.height(6.dp))
-            Text(stringResource(R.string.cancel_anytime_play),
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant)
-
-            Spacer(Modifier.height(14.dp))
+            
             // Google sign-in: REAL Credential Manager flow. After real Google
             // authentication: owner → unlocked by the LaunchedEffect above;
             // everyone else → routed straight into Google Play Billing for the
@@ -234,24 +202,9 @@ fun PaywallScreen(vm: AppViewModel, onSubscribed: () -> Unit) {
             }
 
             Spacer(Modifier.height(8.dp))
-            TextButton(onClick = { vm.restorePurchases() }) {
-                Text(stringResource(R.string.restore_purchases))
-            }
+           
 
-            message?.let {
-                Spacer(Modifier.height(8.dp))
-                Text(it, color = MaterialTheme.colorScheme.error,
-                    style = MaterialTheme.typography.bodySmall, textAlign = TextAlign.Center)
-            }
-            if (!billingAvailable) {
-                Spacer(Modifier.height(6.dp))
-                Text(stringResource(R.string.billing_unavailable),
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    style = MaterialTheme.typography.bodySmall, textAlign = TextAlign.Center)
-            }
-            Text(stringResource(R.string.trial_disclosure),
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant, textAlign = TextAlign.Center)
+            
             Spacer(Modifier.height(28.dp))
         }
     }

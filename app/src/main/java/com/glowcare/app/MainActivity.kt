@@ -48,12 +48,16 @@ private fun AppRoot(vm: AppViewModel) {
     // First-launch paywall: the subscription screen comes before Home, and
     // returns whenever the verified Play subscription/trial lapses.
     Crossfade(
-        targetState = when {
-            !vm.billingReady -> "loading"
-            !vm.state.onboarded -> "onboarding"
-            !vm.premium && !vm.debugFreeTier -> "paywall"
-            else -> "app"
-        },
+        
+targetState = when {
+    !vm.profile.chosen -> "signin"
+    !vm.profile.isSignedIn -> "signin"
+    !vm.billingReady -> "loading"
+    !vm.state.onboarded -> "onboarding"
+    !vm.premium && !vm.debugFreeTier -> "paywall"
+    else -> "app"
+}
+,
         label = "root"
     ) { stage ->
         when (stage) {
